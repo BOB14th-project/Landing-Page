@@ -98,9 +98,16 @@ export default function Home() {
             <p className="text-2xl md:text-3xl text-gray-300 font-semibold mb-4">
               양자내성암호 전환 대상 탐지 도구
             </p>
-            <p className="text-lg md:text-xl text-gray-400 max-w-3xl mx-auto">
+            <p className="text-lg md:text-xl text-gray-400 max-w-3xl mx-auto mb-6">
               파일 시스템을 분석하여 PQC Migration이 필요한 암호 알고리즘을 탐지합니다
             </p>
+            <div className="max-w-4xl mx-auto">
+              <div className="bg-gradient-to-r from-purple-900/30 to-blue-900/30 backdrop-blur-sm border border-purple-500/20 rounded-xl p-6">
+                <p className="text-sm md:text-base text-gray-300 leading-relaxed">
+                  파일별 정적 분석 수행 → 실행 파일 동적 분석 수행 → 필요 시 LLM 기반 분석 및 전환 가이드 제공
+                </p>
+              </div>
+            </div>
           </div>
 
           {/* Key Features Grid */}
