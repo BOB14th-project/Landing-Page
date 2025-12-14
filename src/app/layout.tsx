@@ -1,12 +1,9 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
 import './globals.css'
 
-const inter = Inter({ subsets: ['latin'] })
-
 export const metadata: Metadata = {
-  title: 'CryptoScanner - Post-Quantum Cryptography Transition Tool',
-  description: 'Detect and analyze cryptographic algorithms requiring transition to post-quantum cryptography standards',
+  title: 'CryptoScanner - 양자내성암호 전환 대상 탐지 도구',
+  description: '파일 시스템을 분석하여 PQC Migration이 필요한 암호 알고리즘을 탐지합니다',
 }
 
 export default function RootLayout({
@@ -15,8 +12,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="ko">
+      <body>{children}</body>
     </html>
   )
 }
