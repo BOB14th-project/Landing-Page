@@ -45,9 +45,12 @@ export default function Home() {
       <nav className="fixed top-0 left-0 right-0 z-50 bg-black/80 backdrop-blur-md border-b border-purple-900/30">
         <div className="container mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
-            <div className="text-2xl font-bold bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">
+            <button
+              onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+              className="text-2xl font-bold bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent hover:opacity-80 transition-opacity"
+            >
               CryptoScanner
-            </div>
+            </button>
             <div className="flex gap-6">
               <button
                 onClick={() => scrollToSection('platform')}
@@ -104,7 +107,7 @@ export default function Home() {
             <div className="max-w-4xl mx-auto">
               <div className="bg-gradient-to-r from-purple-900/30 to-blue-900/30 backdrop-blur-sm border border-purple-500/20 rounded-xl p-6">
                 <p className="text-sm md:text-base text-gray-300 leading-relaxed">
-                  파일별 정적 분석 수행 → 실행 파일 동적 분석 수행 → 필요 시 LLM 기반 분석 및 전환 가이드 제공
+                  파일별 정적 분석 수행 → 실행 파일 동적 분석 수행 → LLM 기반 분석 및 전환 가이드 제공
                 </p>
               </div>
             </div>
@@ -259,7 +262,7 @@ export default function Home() {
       {/* Footer */}
       <footer className="py-12 border-t border-purple-900/30">
         <div className="container mx-auto px-6 text-center">
-          <p className="text-gray-500">&copy; 2024 CryptoScanner. All rights reserved.</p>
+          <p className="text-gray-500">&copy; 2025 CryptoScanner. All rights reserved.</p>
         </div>
       </footer>
       </div>
